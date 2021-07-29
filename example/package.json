@@ -1,0 +1,40 @@
+{
+  "name": "@react-hookbox/after-loading-effect__example",
+  "homepage": ".",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "PORT=3402 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@react-hookbox/after-loading-effect": "link:..",
+    "@testing-library/jest-dom": "link:../node_modules/@testing-library/jest-dom",
+    "@testing-library/react": "link:../node_modules/@testing-library/react",
+    "@testing-library/user-event": "link:../node_modules/@testing-library/user-event",
+    "react": "link:../node_modules/react",
+    "react-dom": "link:../node_modules/react-dom",
+    "react-scripts": "link:../node_modules/react-scripts",
+    "typescript": "link:../node_modules/typescript"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@types/jest": "link:../node_modules/@types/jest",
+    "@types/node": "link:../node_modules/@types/node",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "link:../node_modules/@types/react-dom",
+    "eslint": "^7.31.0"
+  },
+  "browserslist": {
+    "production": [
+      ">2%"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
