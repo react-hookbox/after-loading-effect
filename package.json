@@ -1,6 +1,6 @@
 {
   "name": "@react-hookbox/after-loading-effect",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "useAfterLoadingEffect",
   "author": "hakobpogh",
   "license": "MIT",
@@ -13,16 +13,15 @@
     "node": ">=12"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,esm,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,esm,cjs",
+    "build": "microbundle-crl --no-compress",
+    "start": "microbundle-crl watch --no-compress",
     "lint": "eslint .",
     "test": "run-s test:build test:unit",
     "test:build": "run-s build",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "yarn example && yarn example build",
-    "deploy": "gh-pages -d example/build",
-    "example": "yarn --cwd example"
+    "example": "yarn --cwd example",
+    "prepublish": "rm -rf dist && yarn build"
   },
   "peerDependencies": {
     "react": "^16.0.0 || ^17.0.0"
